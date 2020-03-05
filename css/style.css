@@ -6,7 +6,7 @@
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: "Open Sans";
+	font-family: "Open Sans",bold;
 	margin: 0;
 	line-height: 1.5;
 }
@@ -20,17 +20,28 @@ body {
 	max-width: 1920px;
 	font-size: 14px;
 }
+
+/*_____________________________HEADER_______________________*/
 .header {
-	display: flex;
-	flex-direction: column;
 	width: 100%;
+	padding: 10px;
+
+}
+
+.header_nav {
+	max-width: 825px;
+	padding:10px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 
 }
 .logo {
 	display: flex;
 	flex-direction: column;
 	align-items: baseline;
-	margin: 0 152px 0 122px;
+	/*margin: 0 152px 0 122px;*/
 }
 
 .logo img {
@@ -38,31 +49,36 @@ body {
 
 }
 
-.logo h1 {
+/*.logo h1 {
 	font-family:"Myriad Pro";
 	font-size: 24px;
 	color: #5363db;
 	font-weight: 100;
 	margin: 0;
 	
-}
+}*/
 
-.header_menu {
+.navigation {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 0;
-	height: 100px;
+	/*height: 100px;*/
 	width: 100%;
 	margin: 0 auto;
+
+}
+.nav {
+	display: flex;
+	flex-direction: row;
 
 }
 
 .link {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 30px 0 0;
+	padding: 0 30px 0 0;
 	text-decoration: none;
 	color: #555555;
 	font-size: 14px;
@@ -100,17 +116,28 @@ body {
 	/*visibility: visible;*/
 }
 
-.slider {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: baseline;
-	width: 100%; 
-	height: 600px;
+
+/*_________________________________MAIN_________________________*/
+
+.intro {
+	width: 100%;
 	background-image: url("../images/mainpage.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+}
+
+.slider {
+	width: 100%;
+	max-width: 1174px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline; 
+	padding:50px 10px;
+	/*height: 600px;*/
+	
 	
 }
 
@@ -141,12 +168,14 @@ body {
 
 }
 
+/*----------------------------application form---------------*/
+
 .menu {
 	width: 303px;
 	height: 392px;
 	display: flex;
 	flex-direction: column;
-	margin: 100px 90px 110px 336px;
+	/*margin: 100px 90px 110px 336px;*/
 	border-radius: 19px;
 	padding: 38px 40px 15px 30px;
 	background: white;
@@ -199,26 +228,106 @@ body {
 
 
 
+/*____________________________program______________________*/
 
-/*fooooter*/
-.footer {
-	height: 550px;
-	width: 100%;
+.program {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 1190px;
+	padding:10px;
+
 }
+
+.program h2 {
+	margin: 0 auto;
+	color: #5b6ceb;
+	font-size: 30px;
+}
+
+.program h3 {
+	margin: 0 auto;
+	font-size: 40.99px;
+	font-family: "Freestyle Script",regular;
+	color: #777777 ;
+}
+
+.variations {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: calc(50% - 30px);
+	padding: 0px;
+	border-radius: 6px;
+	margin:25px 15px 0;
+	/*margin: auto 0;*/
+	display: flex;
+	flex-direction: row;
+}
+
+.card h3 {
+	font-family: "Open Sans";
+	font-size: 20px;
+	color: #777777 ;
+	margin: 0;
+}
+
+.card img {
+	/*float: left;*/
+	margin-right: 30px;
+}
+
+.card h6 {
+	font-size: 14px;
+	font-weight: regular;
+	color: #999999;
+}
+
+.card_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+
+}
+/*___________________________ FOOTER____________________________*/
+
+.footer {
+	
+	width: 100%;
+	
+}
+
+.info_holder {
+width: 100%;
+background-color: #5b6ceb;
+/*padding: 90px 442px 60px 365px;*/
+padding: 90px 10px;
+}
+
 .footer_info {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	height: 450px;
-	background: #5b6ceb;
+	max-width: 1171px;
+	margin: 0 auto;
+	/*height: 450px;*/
+	
 	color: #ffffff;
-	padding: 100px 450px 100px 375px; 
+	padding: 10px; 
 }
 
 .about {
-	display: ;
+	display: flex;
+	flex-direction: column;
 	width: 462px;
-	margin-right: 139px;
+	/*margin-right: 139px;*/
+	padding: 10px;
+	justify-content: space-between;
 }
 
 .footer_info h3 {
@@ -229,20 +338,33 @@ body {
 	
 }
 
+.networks {
+	display: flex;
+	flex-direction: row;
+	margin: ;
+	padding: 70px 10px 10px 0;
+	
+}
+
 .contacts {
 	display: flex;
 	flex-direction: column;
-	width: 500px;
+	padding: 10px 10px 10px 130px;
+	align-content: flex-start;
 
 }
 
 .contacts a {
 	color: white;
 	text-decoration: none;
-	display: inline-block; 
+	/*display: inline-block; 
 	width: 191px;
-	height: 40px;
-	margin: 0 10px 30px 0;
+	height: 40px;*/
+	/*margin: 0 10px 30px 0;*/
+	/*padding: 0 10px 30px 0;*/
+	display: block;
+	width: 50%;
+	padding: 0 0 24px 0;
 }
 
 .data {
@@ -252,6 +374,56 @@ body {
 	justify-content: space-between;
 }
 
+.networks a {
+	text-decoration: none;
+	color:white;
+	margin-right: 15px;
+
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ljtxn1');
+  src:  url('../fonts/icomoon.eot?ljtxn1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ljtxn1') format('truetype'),
+    url('../fonts/icomoon.woff?ljtxn1') format('woff'),
+    url('../fonts/icomoon.svg?ljtxn1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-pinterest-p:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+
 
 
 
@@ -259,9 +431,9 @@ body {
 
 .copyright {
 	background-color: #5363d8;
-	height: 100px;
 	display: flex;
 	justify-content: center;
+	padding: 40px 10px;
 }
 
 .copyright p {
