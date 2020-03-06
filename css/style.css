@@ -37,14 +37,14 @@ body {
 	justify-content: center;
 
 }
-.logo {
+/*.logo {
 	display: flex;
 	flex-direction: column;
 	align-items: baseline;
 	/*margin: 0 152px 0 122px;*/
 }
 
-.logo img {
+.logo {
 	width: 100%;
 
 }
@@ -78,7 +78,7 @@ body {
 .link {
 	display: inline-block;
 	vertical-align: top;
-	padding: 0 30px 0 0;
+	margin:  0 30px 0 0;
 	text-decoration: none;
 	color: #555555;
 	font-size: 14px;
@@ -290,10 +290,293 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
 
+/*_________________________picture_links________________*/
+
+.picture_links {
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+	padding: 126px 0 10px 0;
+	
+}
+
+.picture_link {
+	width: 25%;
+	position: relative;
+}
+
+.img_link {
+	max-width: 478px;
+}
+
+.picture_link:hover {
+	content:"";
+	position: absolute;
+	background:  url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/*background: rgb(108, 122, 226,0.9);*/
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 
 
 }
+
+/*______________________about_us_____________________*/
+
+.about_us {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 105px  10px;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.info {
+	padding: 10px;
+
+}
+
+.yoga_gallery {
+	width: 50%;
+
+}
+
+.gallery-img {
+	min-width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color:#5c6deb;
+	font-size: 50px;
+	}	
+
+.slick-prev {
+	left: 50px;
+	z-index: 1;
+	}
+
+.slick-next {
+	right: 30px;
+	}							
+
+
+/*________________________________yoga-adv_______________*/
+
+.holder_adv {
+	background: url(../images/img-visual02.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    position: relative;
+	padding: 110px 10px ;
+	margin: 50px 0;
+}
+
+.holder_adv:after {
+	content: "";
+	position: absolute;
+	background: rgb(108, 122, 226,0.9);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+.adv_yoga {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.adv_card {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	width: 25%;
+	z-index: 1;
+
+}
+
+.adv_card h3 {
+	padding: 25px 0;
+}
+
+.adv_card img {
+
+	border: 2px solid #ffffff;
+	border-radius: 100%;
+	width: 40%;
+	/*height: 70px;*/
+	padding: 10px;
+}
+/*??????????????????????РЕГУЛИРУЕМ РИСУНКИ*/
+
+
+
+
+
+/*____________________buy_now___________________*/
+.lotos_holder {
+	width: 100%;
+	background: url(../images/lotos.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 0 0 200px 0;
+}
+
+.buy_now {
+	max-width: 1200px;
+	padding: 15px;
+	margin: 35px auto 0 ;
+	display: flex;
+	flex-direction: row;
+}
+
+.buy_card {
+	border-radius: 8px;
+	background-color: #ffffff;
+	width: calc(33.33% - 30px);
+	display: flex;
+	flex-direction: column;
+	margin: 0 15px;
+	align-items: center;
+	z-index: 5;
+
+
+}
+
+.buy_title { 
+	background: #5b6ceb;
+	border-radius: 8px;
+	color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: ;
+	padding: 50px 0;
+	margin-bottom: 50px;
+}
+
+.buy_card input {
+	color: white;
+	background: #5b6ceb;
+	border-radius: 18px;
+	font-size: 18px;
+	padding: 16px 48px;
+	margin: 40px 0;
+	border: none;
+}
+.buy_card h3 {
+	font-size: 18px;
+	line-height: 2.83;
+
+} 
+.underlined{
+	position: relative;
+}
+
+.underlined:after {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 50%;
+	height: 2px;
+	background-color: #d7d7d7;
+	bottom: -5%;
+	left: 25%;
+	
+}
+.buy_title h5 {
+	font-size: 18px;
+}
+
+.buy_title h1 {
+	font-size: 67.35px;
+}
+
+
+/*__________________________feedback------------------*/
+
+.feedbacks {
+	margin: 70px auto 0;
+	max-width: 1145px;
+	padding: 40px 100px 60px 64px;
+	background-color: #ffffff;
+	border-radius: 7px;
+}
+
+.feedback {
+	display: flex;
+	flex-direction: row;
+	/*position: relative;*/
+}
+
+.trainer {
+	border-radius: 100%;
+	border: 2px solid #d7d7d7;
+	padding: 10px;
+	margin-right: 40px;
+	
+}
+
+.img_wrapper {
+	position: relative;
+}
+
+.img_wrapper:after {
+	position: absolute;
+	display: block; 
+	content: "";
+	width: 10px;
+	height: 75px;
+	background: #d7d7d7;
+	top: 39%;
+	left: 101%;
+}
+
+.feedback blockquote {
+	padding:0 10px 0 50px;
+	position: relative;
+}
+
+.f_info:before {
+	content: "\0022";
+	color: #5b6ceb;
+	width: 20px;
+	margin: 0 30px 0 30px;
+	position: absolute;
+	left:-30px;
+	
+}
+
+.f_info:after {
+	content: "\2033";
+	color: #5b6ceb ;
+	width: 20px;
+	margin: 0 30px 0 30px;
+}
+
+
+
+
+
 /*___________________________ FOOTER____________________________*/
 
 .footer {
@@ -377,17 +660,18 @@ padding: 90px 10px;
 .networks a {
 	text-decoration: none;
 	color:white;
-	margin-right: 15px;
+	margin-right: 20px;
+	font-size: 24px;
 
 }
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?ljtxn1');
-  src:  url('../fonts/icomoon.eot?ljtxn1#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?ljtxn1') format('truetype'),
-    url('../fonts/icomoon.woff?ljtxn1') format('woff'),
-    url('../fonts/icomoon.svg?ljtxn1#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?uspr2');
+  src:  url('../fonts/icomoon.eot?uspr2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?uspr2') format('truetype'),
+    url('../fonts/icomoon.woff?uspr2') format('woff'),
+    url('../fonts/icomoon.svg?uspr2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -408,6 +692,22 @@ padding: 90px 10px;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-globe:before {
+  content: "\e904"
+}
+.icon-location:before {
+  content: "\e905";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-mail-envelope-closed:before {
+  content: "\e906";
+}
 .icon-google:before {
   content: "\e900";
 }
@@ -420,12 +720,10 @@ padding: 90px 10px;
 .icon-facebook:before {
   content: "\e903";
 }
-.icon-instagram:before {
-  content: "\ea92";
+.data a:before {
+	font-size: 24px;
+	margin-right: 20px;
 }
-
-
-
 
 /*copyright*/
 
