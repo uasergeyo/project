@@ -19,6 +19,7 @@ body {
 	width: 100vw;
 	max-width: 1920px;
 	font-size: 14px;
+	padding: ;
 }
 
 /*_____________________________HEADER_______________________*/
@@ -259,6 +260,7 @@ body {
 }
 
 .card {
+	box-shadow: -30px 15px 20px #f2f2f2;
 	width: calc(50% - 30px);
 	padding: 0px;
 	border-radius: 6px;
@@ -295,22 +297,24 @@ body {
 /*_________________________picture_links________________*/
 
 .picture_links {
-	width: 100%;
 	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: stretch;
 	padding: 126px 0 10px 0;
+	margin: 0 auto;
 	
 }
 
 .picture_link {
-	width: 25%;
+	/*width: 25%;*/
 	position: relative;
+	/*z-index: 5;*/
 }
 
 .img_link {
 	max-width: 478px;
+	z-index: 5;
 }
 
 .picture_link:hover {
@@ -325,6 +329,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
+	z-index: 10;s
 
 
 }
@@ -417,13 +422,27 @@ body {
 	padding: 25px 0;
 }
 
+.card_holder {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
 .adv_card img {
 
-	border: 2px solid #ffffff;
+	/*border: 2px solid #ffffff;
 	border-radius: 100%;
 	width: 40%;
 	/*height: 70px;*/
-	padding: 10px;
+	/*padding: 10px;*/
+	max-width: 100%;
+	height: auto;
 }
 /*??????????????????????РЕГУЛИРУЕМ РИСУНКИ*/
 
@@ -450,6 +469,8 @@ body {
 }
 
 .buy_card {
+	/*box-shadow: -2em 0 0.99em #f2f2f2;*/
+	box-shadow: -30px 15px 20px #f2f2f2;
 	border-radius: 8px;
 	background-color: #ffffff;
 	width: calc(33.33% - 30px);
@@ -515,7 +536,8 @@ body {
 /*__________________________feedback------------------*/
 
 .feedbacks {
-	margin: 70px auto 0;
+	box-shadow: -30px 30px 35px #f2f2f2;
+	margin: 70px auto 0 auto;
 	max-width: 1145px;
 	padding: 40px 100px 60px 64px;
 	background-color: #ffffff;
@@ -523,6 +545,7 @@ body {
 }
 
 .feedback {
+
 	display: flex;
 	flex-direction: row;
 	/*position: relative;*/
