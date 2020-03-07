@@ -17,17 +17,15 @@ a,p {
 
 body {
 	font: 400 14px/1.57 "Open Sans",sans-serif;
-	width: 100vw;
+	/*width: 100vw;*/
 	max-width: 1920px;
-	font-size: 14px;
-	padding: ;
 }
 
 /*_____________________________HEADER_______________________*/
 .header {
-	width: 100%;
+	/*width: 100%;*/
 	padding: 10px;
-	font: 100 14px/1.57 "Myriad Pro",sans-serif;
+	font: 200 14px/1.57 "Myriad Pro",sans-serif;
 	color: #555555
 
 }
@@ -74,7 +72,7 @@ body {
 
 }
 
-/*.left {
+/*.sleft {
 	padding-right: 50px;
 
 }
@@ -134,7 +132,7 @@ body {
 /*_________________________________MAIN_________________________*/
 
 .intro {
-	width: 100%;
+	/*width: 100%;*/
 	background-image: url("../images/mainpage.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -339,7 +337,7 @@ body {
 	
 }
 
-.picture_link:after{
+/*.picture_link:after{
 	content:"";
 	position: absolute;
 	background:rgb(83,99,219,0.9);
@@ -349,13 +347,38 @@ body {
 	bottom: 0;
 	opacity: 0.6;
 	visibility: hidden;
+
 }
 
 .picture_link:hover:after {
 	visibility: visible;
+
 	
+}*/
+
+
+
+.picture_link:after{
+	content:"";
+	position: absolute;
+	background:url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.6;
+	visibility: hidden;
+
 }
 
+.picture_link:hover:after {
+	visibility: visible;
+
+	
+}
 /*______________________about_us_____________________*/
 
 .about_us {
@@ -363,37 +386,46 @@ body {
 	margin: 0 auto;
 	padding: 105px  10px;
 	display: flex;
-	flex-direction: row;
-
 }
 
 .info {
-	padding: 10px;
+	padding: 10px 140px 10px 10px;
 
 }
 
 .yoga_gallery {
-	width: 50%;
-
+	width: 569px;
+	
 }
 
 .gallery-img {
 	min-width: 100%;
+	border-radius: 7px;
+	position: relative;
+
 }
 
 .slick-prev:before,
 .slick-next:before {
 	color:#5c6deb;
-	font-size: 50px;
+	font-size: 60px;
+	/*position: absolute;*/
+	top: -19px;
+
 	}	
 
 .slick-prev {
-	left: 50px;
+	content:"→";
+	left: -22px;
 	z-index: 1;
+	position: absolute;
 	}
 
 .slick-next {
-	right: 30px;
+	content: "←";
+	right: -61px;
+	position: absolute;
+	left: 520px;
 	}							
 
 
@@ -445,8 +477,8 @@ body {
 }
 
 .card_holder {
-	width: 100px;
-	height: 100px;
+	width: 70px;
+	height: 70px;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	padding: 10px;
@@ -458,11 +490,6 @@ body {
 
 .adv_card img {
 
-	/*border: 2px solid #ffffff;
-	border-radius: 100%;
-	width: 40%;
-	/*height: 70px;*/
-	/*padding: 10px;*/
 	max-width: 100%;
 	height: auto;
 }
