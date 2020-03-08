@@ -118,10 +118,7 @@ body {
 	  
 }
 
-.link:hover {
-	color: #5e6ddd;
-	
-}
+
 
 .link:hover:after {
 	opacity: 1;
@@ -138,6 +135,7 @@ body {
 	background-position: center;
 	background-size: cover;
 	margin-bottom: 95px;
+	position: relative;
 }
 
 .slider {
@@ -151,23 +149,42 @@ body {
 	/*height: 600px;*/
 	
 	
+	
+}
+
+.intro:after {
+	content: "";
+	position: absolute;
+	background: rgb(108, 122, 226,0.1);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+.slider {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .head_text {
-	width: calc(50% - 15px);
+	width: 100%;
 	display: flex;
 	flex-direction:column; 
 	color: white;
 	margin: auto auto;
 	padding: 10px 10px 30px 47px;
+	z-index: 20;
 
 }
 
 .head_text h1 {
 	font-size: 48px;
 	font-weight: bold;
-	top: -11px;
-	left: -82px;
 	padding: 0 0 26px 0; 
 	
 }
@@ -184,10 +201,8 @@ body {
 
 /*----------------------------application form---------------*/
 .menu_holder {
-	width: calc(50% - 15px);
-	display: flex ;
-	justify-content: flex-end;
-	padding: 10px 29px 10px 10px;
+	width: 100%;
+	
 
 }
 .menu {
@@ -198,6 +213,7 @@ body {
 	border-radius: 19px;
 	padding: 23px 40px 15px 30px;
 	background: white;
+	z-index: 20;
 	
 
 
@@ -238,7 +254,7 @@ body {
 	line-height: 1.5;
 	font-size: 25.64px;
 	margin: 0 0 4px 4px;
-	color: blue;
+	color: #5b6ceb;
 	 
 }
 .btn_holder {
@@ -251,7 +267,7 @@ body {
 .menu .try_it {
 	padding: 14px 64px;
 	border-radius: 6px;
-	background: blue;
+	background: #5b6ceb;
 	font-family: "Open Sans";
 	font-size: 16px;
 	color: white;
@@ -288,22 +304,18 @@ body {
 }
 
 .variations {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	margin-top: 54px;
 }
 
 .card {
 	box-shadow: -30px 15px 20px #f2f2f2;
-	width: calc(50% - 15px);
+	width: calc(100% - 15px);
 	padding: 0px;
 	border-radius: 6px;
 	/*margin:25px 15px 0;*/
 	margin:  0 0 25px 0;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .card h4 {
@@ -352,17 +364,17 @@ body {
 
 .picture_links {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: stretch;
 	padding: 10px 0 10px 0;
-	margin: 0 auto 100px;
+	margin: 0 auto 100px auto;
 	
 }
 
 .picture_link {
-	width: 25%;
+	width: 100%;
 	position: relative;
 
 }
@@ -397,27 +409,7 @@ body {
 
 
 
-.picture_link:after{
-	content:"";
-	position: absolute;
-	background:url(../images/background.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	opacity: 0.6;
-	visibility: hidden;
 
-}
-
-.picture_link:hover:after {
-	visibility: visible;
-
-	
-}
 /*______________________about_us_____________________*/
 
 .about_us {
@@ -425,6 +417,7 @@ body {
 	margin: 0 auto 103px;
 	padding: 15px;
 	display: flex;
+	flex-direction: column;
 }
 
 .info {
@@ -512,8 +505,8 @@ body {
 }
 
 .adv_card {
-	width: calc(25% - 10px);
-	height: calc(50% - 10px);
+	width: calc(50% - 10px);
+	/*height: calc(50% - 10px);*/
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -582,19 +575,21 @@ body {
 	padding: 15px;
 	margin: 0 auto;
 	display: flex;
+	flex-direction: column;
 }
 
 .buy_card {
-	/*box-shadow: -2em 0 0.99em #f2f2f2;*/
-	box-shadow: -30px 15px 20px #f2f2f2;
 	border-radius: 8px;
 	background-color: #ffffff;
-	width: calc(33.33% - 30px);
+	width: calc(100% - 30px);
 	display: flex;
 	flex-direction: column;
 	margin: 0 15px;
 	align-items: center;
 	z-index: 5;
+	flex-wrap: wrap;
+	
+}
 	/*---------------*/
 	
 
@@ -607,8 +602,7 @@ body {
 	color: white;
 	width: 100%;
 	display: flex;
-	flex-direction: row;
-	align-items: ;
+	align-items: center;
 	padding: 20px 0;
 	margin-bottom: 50px;
 }
@@ -618,7 +612,7 @@ body {
 }
 
 .price {
-	font-size: 67.35 птpx;
+	font-size: 67.35px;
   	font-family: "Open Sans";
   	color: rgb(255, 255, 255);
   	font-weight: bold;
@@ -749,7 +743,7 @@ padding: 90px 10px;
 
 .footer_info {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	max-width: 1171px;
 	margin: 0 auto;
@@ -787,7 +781,7 @@ padding: 90px 10px;
 .contacts {
 	display: flex;
 	flex-direction: column;
-	padding: 10px 10px 10px 130px;
+	padding: 10px 10px 10px 10px;
 	align-content: flex-start;
 
 }
@@ -830,6 +824,25 @@ padding: 90px 10px;
 	position: absolute;
 	left: -35px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @font-face {
   font-family: 'icomoon';
@@ -914,10 +927,148 @@ ___________________________________________________________
 ___________________________________________________
 _______________RESPONSIVE________________________________*/
 
+
+	
+/*_______________________________________________________
+___________________________________________________________
+___________________________________________________
+_______________RESPONSIVE________________________________*/
+
 @media (min-width: 768px) {
+.nav {
+	display: flex;
+}
+.slider {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline; 
+	padding: 95px 15px;
+}
+.head_text {
+	width: 50%;
+}
+.menu_holder {
+	width: 50%;
+	display: flex ;
+	justify-content: flex-end;
+	padding: 10px 29px 10px 10px;
+}
+
+.variations {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 54px;
+}
+.card {
+	box-shadow: -30px 15px 20px #f2f2f2;
+	width: calc(50% - 15px);
+
+}
+.picture_links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: stretch;
+}
+.picture_link {
+	width: 50%;
+}
+
+.adv_card {
+	width: calc(33.33% - 10px);
+}
+
+.buy_now {
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+.buy_card {
+	width: calc(50% - 30px);
+	box-shadow: -30px 15px 20px #f2f2f2;
+	
+}
+
+
 
 }
 
 @media (min-width: 1024px) {
+.link:hover {
+	color: #5e6ddd;
 	
+}
+
+.link:hover:after {
+	opacity: 1;
+	/*visibility: visible;*/
+}
+
+.card {
+	box-shadow: -30px 15px 20px #f2f2f2;
+	width: calc(50% - 15px);
+	flex-direction: row;
+}
+.picture_link {
+	width: 25%;
+	
+}	
+.picture_link:after{
+	content:"";
+	position: absolute;
+	background:url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.6;
+	visibility: hidden;
+
+}
+
+.picture_link:hover:after {
+	visibility: visible;
+}
+
+.about_us {
+	flex-direction: row; 
+}
+.adv_card {
+	width: calc(25% - 10px);
+}
+.buy_card {
+	width: calc(33.33% - 30px);
+}
+
+.footer_info {
+	display: flex;
+	flex-direction: row;
+}
+.contacts {
+	padding-left: 130;
+
+}
+
+.try_it:hover {
+	background-color: #ffffff;
+	color: #5b6ceb;
+	border: 1px solid #5b6ceb ;
+}
+
+.btn_buy:hover {
+	background-color: #ffffff;
+	color: #5b6ceb;
+	border: 1px solid #5b6ceb ;
+}
+
+.link:hover {
+	color: #5e6ddd;
+	
+}
+
 }
