@@ -72,7 +72,7 @@ body {
 
 }
 
-/*.sleft {
+/*.left {
 	padding-right: 50px;
 
 }
@@ -137,96 +137,119 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin-bottom: 92px;
+	margin-bottom: 95px;
 }
 
 .slider {
 	width: 100%;
-	max-width: 1174px;
+	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: flex-end;
 	align-items: baseline; 
-	padding:103px 0px;
+	padding: 95px 15px;
 	/*height: 600px;*/
 	
 	
 }
 
 .head_text {
+	width: calc(50% - 15px);
 	display: flex;
 	flex-direction:column; 
 	color: white;
-	margin: auto 80px;
+	margin: auto auto;
+	padding: 10px 10px 30px 47px;
 
 }
 
 .head_text h1 {
-	/*position: relative;*/
 	font-size: 48px;
 	font-weight: bold;
 	top: -11px;
 	left: -82px;
+	padding: 0 0 26px 0; 
 	
 }
 
 .head_text p {
 	font-family: 'Freestyle Script';
 	font-size: 40px;
-	margin: 10px;
-	/*position: relative;*/
-	right: 79px;
-	top: 10px;
+    font-family: "Freestyle Script";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
 
 }
 
 /*----------------------------application form---------------*/
+.menu_holder {
+	width: calc(50% - 15px);
+	display: flex ;
+	justify-content: flex-end;
+	padding: 10px 29px 10px 10px;
 
+}
 .menu {
 	width: 303px;
 	height: 392px;
 	display: flex;
 	flex-direction: column;
-	/*margin: 100px 90px 110px 336px;*/
 	border-radius: 19px;
-	padding: 38px 40px 15px 30px;
+	padding: 23px 40px 15px 30px;
 	background: white;
-	position: relative;
-	top: -19px;
+	
 
 
 }
+.input_holder {
+	display flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 
 .input, select, option {
 
 	height: 50px;
 	width: 230px;
-	margin: 18px 0 0 0;
+	margin: 0 0 18px 0;
 	background-color: #f2f2f2;
-	/*color: #969696;*/
-	color:red;
-	padding-left: 10px;
-	border:none;
-	border-radius: 6px;
+	font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(136, 136, 136);
+    padding-left: 11px;
+    line-height: 1.2;
+    text-align: left;
+    border-radius: 8px;
+    background-color: rgb(242, 242, 242);
+    border: none; 
+	
 }
 
-.menu legend {
+.legend_holder {
+	display: flex;
+	padding: 10px 10px 10px 0;
+
+}
+
+.legend_holder legend {
 	font-family: "Open Sans";
 	line-height: 1.5;
 	font-size: 25.64px;
 	margin: 0 0 4px 4px;
 	color: blue;
-	position: relative;
-	top: 51px;
 	 
+}
+.btn_holder {
+	display: flex;
+	justify-content: flex-end;
+	align-content: flex-end;
+	padding: 13px 0 20px 0;
 }
 
 .menu .try_it {
-	width: 170px;
-	height: 50px;
-	position: relative;
-	right: -64px;
-	bottom: -33px;
+	padding: 14px 64px;
 	border-radius: 6px;
 	background: blue;
 	font-family: "Open Sans";
@@ -243,11 +266,11 @@ body {
 /*____________________________program______________________*/
 
 .program {
-	margin: 0 auto;
+	margin: 0 auto 77px;
 	display: flex;
 	flex-direction: column;
-	max-width: 1190px;
-	padding:10px;
+	max-width: 1200px;
+	padding:15px;
 
 }
 
@@ -269,7 +292,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 48px;
+	margin-top: 54px;
 }
 
 .card {
@@ -283,11 +306,15 @@ body {
 	flex-direction: row;
 }
 
-.card h3 {
-	font-family: "Open Sans";
+.card h4 {
 	font-size: 20px;
-	color: #777777 ;
-	margin: 0;
+    font-family: "Open Sans";
+    color: rgb(119, 119, 119);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.25;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 .card img {
@@ -298,15 +325,27 @@ body {
 
 .card h6 {
 	font-size: 14px;
-	font-weight: regular;
-	color: #999999;
+    font-family: "Open Sans";
+    color: rgb(153, 153, 153);
+    line-height: 1.571;
+    stext-align: left;
+}
+
+.card p {
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(85, 85, 85);
+    line-height: 1.571;
+    text-align: left;
+
 }
 
 .card_text {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	padding-left: 30px;
+	justify-content: space-between;
+	padding: 36px 30px 43px;
+    overflow: hidden;
 }
 
 /*_________________________picture_links________________*/
@@ -317,8 +356,8 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: stretch;
-	padding: 87px 0 10px 0;
-	margin: 0 auto;
+	padding: 10px 0 10px 0;
+	margin: 0 auto 100px;
 	
 }
 
@@ -382,15 +421,25 @@ body {
 /*______________________about_us_____________________*/
 
 .about_us {
-	max-width: 1220px;
-	margin: 0 auto;
-	padding: 105px  10px;
+	max-width: 1230px;
+	margin: 0 auto 103px;
+	padding: 15px;
 	display: flex;
 }
 
 .info {
-	padding: 10px 140px 10px 10px;
+	padding: 10px 143px 10px 15px;
 
+}
+.info h2 {
+	font-size: 30px;
+    font-family: "Open Sans";
+    color: rgb(91, 108, 235);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: left;
+    padding-bottom: 17px;
 }
 
 .yoga_gallery {
@@ -438,7 +487,7 @@ body {
 	background-size: cover;
     position: relative;
 	padding: 110px 10px ;
-	margin: 50px 0;
+	margin: 0 0 82px;
 }
 
 .holder_adv:after {
@@ -455,7 +504,7 @@ body {
 .adv_yoga {
 	margin: 0 auto;
 	max-width: 1200px;
-	padding: 10px;
+	padding: 15px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -463,17 +512,36 @@ body {
 }
 
 .adv_card {
+	width: calc(25% - 10px);
+	height: calc(50% - 10px);
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 15px;
-	width: 25%;
+	padding: 5px;
 	z-index: 1;
+	margin: 5px 5px;
 
 }
 
-.adv_card h3 {
-	padding: 25px 0;
+.adv_card h4 {
+	padding: 15px 0 10px 0;
+	font-size: 18px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+.adv_card p {
+	font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    line-height: 1.688;
+    text-align: center;
 }
 
 .card_holder {
@@ -512,9 +580,8 @@ body {
 .buy_now {
 	max-width: 1200px;
 	padding: 15px;
-	margin: 35px auto 0 ;
+	margin: 0 auto;
 	display: flex;
-	flex-direction: row;
 }
 
 .buy_card {
@@ -528,20 +595,36 @@ body {
 	margin: 0 15px;
 	align-items: center;
 	z-index: 5;
-
+	/*---------------*/
+	
 
 }
 
 .buy_title { 
 	background: #5b6ceb;
-	border-radius: 8px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 	color: white;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: ;
-	padding: 50px 0;
+	padding: 20px 0;
 	margin-bottom: 50px;
+}
+
+.price-title {
+	margin:0 auto;
+}
+
+.price {
+	font-size: 67.35 птpx;
+  	font-family: "Open Sans";
+  	color: rgb(255, 255, 255);
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	line-height: 1.125;
+  	text-align: left;
 }
 
 .buy_card input {
@@ -821,4 +904,20 @@ padding: 90px 10px;
 	font-size: 16px;
 	color: #b7bffc;
 	margin:auto;
+}
+
+
+
+
+/*_______________________________________________________
+___________________________________________________________
+___________________________________________________
+_______________RESPONSIVE________________________________*/
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+	
 }
