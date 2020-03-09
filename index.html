@@ -6,7 +6,7 @@
 	<title>Yoga</title>
 	<link rel="icon" href="images/logo.png">
 	<link rel="stylesheet" href="css/reset.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
@@ -14,36 +14,29 @@
 </head>
 <body>
 	<header class="header">
-	  <div class="header_nav">
-		<nav class="navigation" class="left">
-			<ul class="nav">
+	   <!-- <div class="header_nav">	 -->
+	   	<img class="logo" src="images/logo.png" alt="">
+		<nav class="navigation">
+			<!-- <nav class="menu_burger"> -->
+			<input id="menu_button" type="checkbox">
+			<label class="button_menu" for="menu_button">
+						<span></span>
+			</label>
+			<div class="nav-holder">
+			<ul class="nav ">
 				<li><a href="#" class="link">About us</a></li>
 				<li><a href="#" class="link">Reservation</a></li>
 				<li><a href="#" class="link">Gallery</a></li>
 			</ul>
-		</nav>
-
-		<!-- <nav class="header_menu">
-			<a class="link" href="#">About us</a>
-			<a class="link" href="#">Reservation</a>
-			<a class="link" href="#">Gallery</a> -->
-		<!-- <div class="logo"> -->
-			<img class="logo" src="images/logo.png" alt="">
-			<!-- <h1>YOGA</h1> -->
-		<!-- </div> -->
-			<!-- <a class="link" href="#">Blog</a>
-			<a class="link" href="#">Elements</a>
-			<a class="link" href="#">Shop</a>
-		</nav> -->
-
-		<nav class="navigation">
-			<ul class="nav" class="right">
+			<ul class="nav ">
 				<li><a href="#" class="link">Blog</a></li>
 				<li><a href="#" class="link">Elements</a></li>
 				<li><a href="#shop" class="link">Shop</a></li>
 			</ul>
+			</div>
 		</nav>
-	  </div>
+	  <!-- </div> -->
+	  
 		
 		
 	</header>
@@ -144,16 +137,7 @@
 			
 			
 		</div>
-		<!-- <div class="yoga_gallery">
-			<img src="images/img-grid01.jpg" alt="" class="gallery-img">
-			<img src="images/img-grid02.jpg" alt="" class="gallery-img">
-			<img src="images/img-grid03.jpg" alt="" class="gallery-img">
-			<img src="images/img-grid04.jpg" alt="" class="gallery-img">
-			<img src="images/img-grid05.jpg" alt="" class="gallery-img">
-			<img src="images/img-grid06.jpg" alt="" class="gallery-img">
-			<img src="images/img-grid07.jpg" alt="" class="gallery-img">
-			<img src="images/img-grid08.jpg" alt="" class="gallery-img">
-		</div> -->
+		
 	</div>
 
 
@@ -217,58 +201,49 @@
 			</div>
 		</div>
 	</div>
-  <div class="lotos_holder">
+<div class="lotos_holder">
 	<div class="buy_now" id="shop">
 		<div class="buy_card">
 			<div class="buy_title">
-				<span class="price-title"><span>$ &emsp;  </span><h1 class="price">  49<sub><span>/month</span></sub></h1></span>	
+				<span class="price-title"><span class="dollar" >$ &ensp;  </span><span class="price">&ensp; 49</span>	<span class="month">/ month</span></span>	
 			</div>
-			<h3 class="underlined">ENTRY DATE: MON – FRI</h3>
-			<h3>ENTRY TIME: 8A.M – 8P.M</h3>
-			<h3>NUTRITION ADVICER: NO</h3>
+			<h5 class="underlined">ENTRY DATE: MON – FRI</h5>
+			<h5>ENTRY TIME: 8A.M – 8P.M</h5>
+			<h5>NUTRITION ADVICER: NO</h5>
 			<input class="btn_buy" type="submit" value="Buy now">
 		</div>
 		<div class="buy_card">
 			<div class="buy_title">
-				<span class="price-title"><span>$ &emsp; </span><h1 class="price">  69</h1><span>/month</span></span>	
-		
-			</div>
-			<h3 class="underlined">ENTRY DATE: MON – FRI</h3>
-			<h3>ENTRY TIME: 8A.M – 8P.M</h3>
-			<h3>NUTRITION ADVICER: YES</h3>
+
+				<span class="price-title"><span class="dollar" >$ &ensp;  </span><span class="price">&ensp; 69</span>	<span class="month">/ month</span></span>
+				
+			</div >
+			
+			<h5 class="underlined">ENTRY DATE: MON – FRI</h5>
+			<h5>ENTRY TIME: 8A.M – 8P.M</h5>
+			<h5>NUTRITION ADVICER: YES</h5>
+			
 			<input class="btn_buy" type="submit" value="Buy now">
 		</div>
 		
 		<div class="buy_card">
 			<div class="buy_title">
-				<span class="price-title"><span>$ &emsp;  </span><h1 class="price">  99</h1><span>/month</span></span>	
-			</div>
+				<span class="price-title"><span class="dollar" >$ &ensp;  </span><span class="price">&ensp; 99</span>	<span class="month">/ month</span></span>
+			</div >
 		
-			<h3 class="underlined">ENTRY DATE: MON – SUN</h3>
-			<h3>ENTRY TIME: 8A.M – 8P.M</h3>
-			<h3>NUTRITION ADVICER: YES</h3>
+			<h5 class="underlined">ENTRY DATE: MON – SUN</h5>
+			<h5>ENTRY TIME: 8A.M – 8P.M</h5>
+			<h5>NUTRITION ADVICER: YES</h5>
 			
 			<input class="btn_buy" type="submit" value="Buy now">
 		</div>
 	</div>
 
-	<div class="feedbacks">
-		<div class="feedback">
-			<div class="img_wrapper">
-			<img src="images/sara.jpg" class="trainer" alt="">
-			</div>
-			<blockquote>
-				<p class="f_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores distinctio asperiores, amet placeat, excepturi beatae nostrum facilis harum nisi reiciendis assumenda! Id iusto obcaecati at officiis illum doloremque facilis, perspiciatis optio, pariatur laboriosam vel dolorum voluptatibus, amet quasi veritatis nihil itaque eum, iure soluta doloribus. Deserunt fugiat odio velit ab quibusdam id rem odit eveniet similique inventore, officiis dolores autem quo impedit illo tempora assumenda praesentium sapiente voluptatum molestias rerum? Fugit deleniti temporibus molestiae quaerat inventore laboriosam ducimus dolor, dolorum cum soluta, consequuntur similique, doloribus a deserunt unde.</p>
-				<p>Trainer</p>
-				<cite>Laura Shepard</cite>
-			</blockquote>
-		</div>
-	</div>
+	<!-- feedbacks_____________________________________ -->
 
 
 
-
-  </div>
+</div>
 
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
