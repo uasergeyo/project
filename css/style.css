@@ -8,16 +8,13 @@
 
 body {
 	font: 400 14px/1.57 "Open Sans",sans-serif;
-	/*width: 100vw;*/
+	color: rgb(119, 119, 119);
 	max-width: 1920px;
 }
 
 /*_____________________________HEADER_______________________*/
 .header {
-	/*width: 100%;*/
 	padding: 15px 15px 15px 15px;
-	/*font: 200 14px/1.57 "Myriad Pro",sans-serif;
-	color: #555555;*/
 	position: relative;
 }
 
@@ -59,12 +56,12 @@ body {
 
 .logo {
 	position: absolute;
-	top: -14%;
-	left: 47%;
+	top: 10%;
+	left: 48%;
 
 }
 .logo>img {
-	width: 69px;
+	width: 75%;
 }
 
 
@@ -118,11 +115,10 @@ body {
 
 
 
-.link:visited:after {
+/*.link:visited:after {
 	opacity: 1;
-	/*visibility: visible;*/
 }
-
+*/
 /*-----------______________button_______________________*/
 
 #menu_button {
@@ -188,13 +184,14 @@ body {
 /*_________________________________MAIN_________________________*/
 
 .intro {
-	/*width: 100%;*/
-	background-image: url("../images/mainpage.png");
+	
+	background: url("../images/mainpage.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	margin-bottom: 95px;
 	position: relative;
+
 }
 
 .slider {
@@ -205,22 +202,39 @@ body {
 	justify-content: flex-end;
 	align-items: baseline; 
 	padding: 95px 15px;
-	/*height: 600px;*/
-	
-	
-	
 }
 
 .intro:after {
 	content: "";
 	position: absolute;
-	background: rgb(108, 122, 226,0.1);
+	background: rgb(108, 122, 226,0.7);
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 
 }
+
+/*.holder_adv {
+	background: url(../images/img-visual02.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    position: relative;
+	padding: 80px 10px ;
+	margin: 0 0 82px;
+}
+
+.holder_adv:after {
+	content: "";
+	position: absolute;
+	background: rgb(108, 122, 226,0.9);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}*/
 
 .slider {
 	width: 100%;
@@ -279,7 +293,7 @@ body {
 
 }
 .input_holder {
-	display flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -309,7 +323,7 @@ body {
 
 }
 
-.legend_holder legend {
+.legend_holder>h4 {
 	font-family: "Open Sans";
 	line-height: 1.5;
 	font-size: 25.64px;
@@ -317,6 +331,16 @@ body {
 	color: #5b6ceb;
 	 
 }
+
+/*legend {
+	font-family: "Open Sans";
+	line-height: 1.5;
+	font-size: 25.64px;
+	margin: 0 0 4px 4px;
+	color: #5b6ceb;
+	padding: 10px 10px 10px 0;
+	 
+}*/
 .btn_holder {
 	display: flex;
 	justify-content: flex-end;
@@ -342,7 +366,7 @@ body {
 /*____________________________program______________________*/
 
 .program {
-	margin: 0 auto 77px;
+	margin: 0 auto 10px;
 	display: flex;
 	flex-direction: column;
 	max-width: 1200px;
@@ -431,7 +455,7 @@ body {
 	align-items: center;
 	align-content: stretch;
 	padding: 10px 0 10px 0;
-	margin: 0 auto 100px ;
+	margin: 0 auto 10px ;
 	
 }
 
@@ -470,7 +494,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
     padding-bottom: 17px;
 }
 
@@ -607,7 +631,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	padding: 0 0 200px 0;
+	padding: 0 0 82px 0;
 }
 
 .buy_now {
@@ -755,7 +779,7 @@ padding: 70px 10px 59px;
 .about {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 100%;
 	/*margin-right: 139px;*/
 	padding: 10px;
 	justify-content: space-between;
@@ -782,6 +806,7 @@ padding: 70px 10px 59px;
 	flex-direction: column;
 	padding: 10px 10px 10px 10px;
 	align-content: flex-start;
+	margin: 0 auto;
 
 }
 
@@ -797,11 +822,15 @@ padding: 70px 10px 59px;
 	padding: 0 0 24px 0;
 }
 
+/*.tel {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+*/
 .data {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-direction: column;
 	padding-left: 35px;
 }
 
@@ -816,6 +845,7 @@ padding: 70px 10px 59px;
 	display: inline-block;
 	position: relative;
 	padding-right: 35px;
+	width: 100%;
 }
 
 .data a:before {
@@ -958,18 +988,12 @@ _______________RESPONSIVE________________________________*/
 .nav li>a {
 	font-size: 44px;
 	line-height: 3;
-
+}
 
 	
 }
 
 @media (min-width: 768px) {
-
-/*.navigation {
-	display: flex;
-	flex-direction: row;*/
-	/*justify-content: space-between;*/
-	
 
 .nav-holder {
 	position: static;
@@ -988,11 +1012,16 @@ _______________RESPONSIVE________________________________*/
 	flex-direction: row;
 }
 
+.header {
+	font: 200 16px/1.57 "Myriad Pro",sans-serif;
+	color: #555555;
+}
+
 .nav li>a {
-	font-size: 14px;
+	font-size: 16px;
     font-family: "OpenSans";
     color: rgb(85, 85, 85);
-    font-weight: bold;
+    /*font-weight: bold;*/
     line-height: 1.2;
     text-align: left;
     line-height: 1;
@@ -1003,7 +1032,10 @@ _______________RESPONSIVE________________________________*/
 }
 
 .logo {
-	top: 5%;
+	top: 10%;
+}
+.logo>img {
+	width: 69px;
 }
 
 .slider {
@@ -1015,6 +1047,13 @@ _______________RESPONSIVE________________________________*/
 .head_text {
 	width: 50%;
 }
+
+.program {
+	margin: 0 auto 77px;
+}
+.info h2 {
+	text-align: left;
+}
 .dollar {
 	top: 35%;
 	left: 27%;
@@ -1024,6 +1063,11 @@ _______________RESPONSIVE________________________________*/
 	display: flex ;
 	justify-content: flex-end;
 	padding: 10px 29px 10px 10px;
+}
+
+.picture_links {
+	margin: 0 auto 100px ;
+	
 }
 
 .menu {
@@ -1072,6 +1116,19 @@ _______________RESPONSIVE________________________________*/
 	
 }
 
+.data {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.data a {
+	width: 35%;
+}
+.contacts {
+	margin: 0 ;
+
+}
 
 }
 
@@ -1121,6 +1178,21 @@ _______________RESPONSIVE________________________________*/
 
 }
 
+/*.picture_link:after{
+	content:"";
+	position: absolute;
+    background: url("../images/glass_hover.jpg"), rgba(83, 99, 219, 0.8); 
+    Почему -при ховере отображaется только картинка, фона нет
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.75;
+	visibility: hidden;
+}*/
 
 
 .picture_link:hover:after {
@@ -1145,9 +1217,10 @@ _______________RESPONSIVE________________________________*/
 .footer_info {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 .contacts {
-	padding-left: 130px;
+	width: 48%;
 
 }
 
@@ -1173,6 +1246,18 @@ _______________RESPONSIVE________________________________*/
 	transition: color .15s linear;
 
 }
+.link:active:after {
+	opacity: 1;
+	/*visibility: visible;*/
+}
 
+
+.contacts a {
+	padding: 0 0 20px 0;
+}
+
+.about {
+	width: 42%;
+}
 
 }
